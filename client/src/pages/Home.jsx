@@ -30,7 +30,7 @@ const Home = () => {
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
             <div className="relative bg-black text-white rounded-3xl overflow-hidden mb-12 shadow-2xl">
-                <div className="absolute inset-0 opacity-95 bg-[url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=3000&auto=format&fit=crop')] bg-cover bg-center"></div>
+                <div className="absolute inset-0 opacity-100 bg-[url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=3000&auto=format&fit=crop')] bg-cover bg-center"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
                 <div className="relative p-10 md:p-20 text-center flex flex-col items-center z-10">
                     <span className="bg-white/20 text-white backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 border border-white/20">Welcome to Eventora</span>
@@ -61,7 +61,7 @@ const Home = () => {
                         <FaRegClock />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">Fast Booking</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed">Secure your tickets instantly with our fast streamlined booking infrastructure built for speed.</p>
+                    <p className="text-gray-500 text-sm leading-relaxed">Secure your tickets  instantly with our fast streamlined booking infrastructure built for speed.</p>
                 </div>
                 <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center text-center hover:-translate-y-1 transition duration-300">
                     <div className="w-16 h-16 bg-gray-900 text-white rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md shadow-gray-200/50">
