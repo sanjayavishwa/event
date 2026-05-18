@@ -12,6 +12,7 @@ const Register = () => {
     const [loading, setLoading] = useState(false);
 
     const { register, verifyOTP } = useContext(AuthContext);
+      
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -35,7 +36,7 @@ const Register = () => {
     };
 
     return (
-        <div className="max-w-md mx-auto mt-16 bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+        <div className="max-w-md mx-auto mt-16 bg-white p-8 rounded-xl shadow-lg border border-blue-800">
             <div className="text-center mb-8">
                 <h2 className="text-3xl font-extrabold text-gray-900 mb-2">Create an Account</h2>
                 <p className="text-gray-500">Join Eventora today</p>
@@ -51,7 +52,7 @@ const Register = () => {
                             <input
                                 type="text"
                                 required
-                                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-700 transition shadow-sm"
+                                className="w-full px-4 py-3 rounded-lg border-2 border-pink-500 focus:ring-4 focus:ring-gray-700 transition shadow-sm"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
@@ -86,7 +87,7 @@ const Register = () => {
                         <input
                             type="text"
                             required
-                            placeholder="6-digit code"
+                            placeholder="6-digit code" 
                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gray-700 transition shadow-sm font-bold tracking-widest text-center text-lg"
                             value={otp}
                             onChange={(e) => setOtp(e.target.value)}
@@ -98,7 +99,7 @@ const Register = () => {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-gray-900 text-white font-bold py-3 rounded-lg hover:bg-black focus:ring-4 focus:ring-gray-200 transition shadow-md mt-4"
+                    className="w-full bg-pink-700 text-white font-bold py-3 rounded-lg hover:bg-black focus:ring-4 focus:ring-gray-200 transition shadow-md mt-4"
                 >
                     {loading ? 'Processing...' : (showOTP ? 'Verify & Complete' : 'Sign Up')}
                 </button>
